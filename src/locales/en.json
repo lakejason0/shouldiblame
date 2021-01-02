@@ -1,0 +1,21 @@
+{
+    "navigation": {
+        "title": "Should I blame ……",
+        "subtitle": "Yes...... or perhaps?",
+        "home": "Homepage",
+        "about": "About"
+    },
+    "appBar": {
+        "title": "Should I blame {name}?"
+    },
+    "home": {
+        "title": "Should I blame ……?",
+        "summaryParagraph": "Hi! This is a site for all these \"should I blame\" questions, along with a brief description of the topic.",
+        "summaryParagraphTitle": "What's this?",
+        "usageParagraphTitle": "Usage",
+        "usageParagraph": "You can click one of the items on the navigation menu, and share the URL to people who need the answer."
+    },
+    "about": {
+        "title": "About"
+    }
+}

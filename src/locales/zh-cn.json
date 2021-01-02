@@ -1,0 +1,21 @@
+{
+    "navigation": {
+        "title": "应不应该怪……？",
+        "subtitle": "当然是……额，好吧，我也不知道。",
+        "home": "主页",
+        "about": "关于"
+    },
+    "appBar": {
+        "title": "应不应该怪{name}？"
+    },
+    "home": {
+        "usageParagraphTitle": "用法",
+        "title": "应不应该怪……？",
+        "summaryParagraphTitle": "什么是“Should I blame ……?”",
+        "summaryParagraph": "你好！这是一个收集所有“Should I blame”这类问题的网站，同时会提供相关话题的简介。",
+        "usageParagraph": "点击导航菜单中的项目，然后把网址分享给问这个问题的人！"
+    },
+    "about": {
+        "title": "关于"
+    }
+}

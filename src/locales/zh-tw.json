@@ -1,0 +1,21 @@
+{
+    "navigation": {
+        "title": "應不應該怪……？",
+        "subtitle": "當然是……好吧，我也不知道。",
+        "home": "主頁",
+        "about": "關於"
+    },
+    "appBar": {
+        "title": "應不應該怪{name}？"
+    },
+    "home": {
+        "usageParagraphTitle": "用法",
+        "title": "應不應該怪……？",
+        "summaryParagraphTitle": "什麼是「Should I blame ……?」",
+        "summaryParagraph": "您好！這是一個收集所有「Should I blame」這類問題的網站，同時也會提供相關話題的簡介。",
+        "usageParagraph": "點選導覽選單中的項目，然後把 URL 分享給問這個問題的人！"
+    },
+    "about": {
+        "title": "關於"
+    }
+}

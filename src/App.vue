@@ -1,60 +1,88 @@
 <template>
   <v-app>
+    <v-navigation-drawer app temporary v-model="drawer">
+        <v-list-item>
+          <v-list-item-content>
+            <v-list-item-title class="title">
+              {{ $t("navigation.title") }}
+            </v-list-item-title>
+            <v-list-item-subtitle>
+              {{ $t("navigation.subtitle") }}
+            </v-list-item-subtitle>
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-divider></v-divider>
+        <v-list nav>
+          <v-list-item
+            v-for="route in navigationRoutes"
+            :key="route.name"
+            :to="{ path: route.path }"
+          >
+            <v-list-item-action>
+              <v-icon>mdi-{{ route.icon }}</v-icon>
+            </v-list-item-action>
+            <v-list-item-content>
+              <v-list-item-title>{{ $t(route.name) }}</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </v-list>
+    </v-navigation-drawer>
     <v-app-bar
       app
-      color="primary"
+      :color="$vuetify.theme.dark ? 'dark' : 'primary'"
       dark
+      clipped-left
     >
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
-
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
-      </div>
-
+      
+      <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
+      <v-toolbar-title>{{ $t("appBar.title", {name: this.$t(this.$route.name)}) }}</v-toolbar-title>
       <v-spacer></v-spacer>
-
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
+      <locales-menu />
+      <theme-toggle />
     </v-app-bar>
 
     <v-main>
-      <HelloWorld/>
+      <v-container fluid>
+          <v-fade-transition mode="out-in">
+            <router-view />
+          </v-fade-transition>
+        </v-container>
     </v-main>
   </v-app>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld';
+<style lang="scss">
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+}
+</style>
 
+<script>
+import { routes, navigationRoutes } from "./router";
+import localesMenu from "@/components/localesMenu";
+import themeToggle from "@/components/themeToggle";
 export default {
-  name: 'App',
+  name: 'shouldiblame',
 
   components: {
-    HelloWorld,
+    localesMenu,
+    themeToggle
+  },
+  
+  created() {
+    this.$vuetify.theme.dark = localStorage.getItem("th-theme") === "true";
   },
 
-  data: () => ({
-    //
-  }),
+  data() {
+    return {
+      routes,
+      navigationRoutes,
+      drawer: false
+    };
+  }
 };
 </script>

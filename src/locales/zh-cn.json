@@ -20,6 +20,9 @@
         "title": "关于"
     },
     "caching": {
-        "blame": "应该。"
+        "blame": "应该。",
+        "description": "缓存是用于临时存储（缓存）Web文档（如HTML页面和图像），以减少服务器延迟的一种信息技术。但是，缓存很容易过期，并且可能得不到更新，这就会导致不一致和其他很多问题。此页面灵感来自于{0}，你也可以访问其{1}以获取源代码。",
+        "link_site": "shouldiblamecaching.com",
+        "link_repo": "于GitHub的Repository"
     }
 }

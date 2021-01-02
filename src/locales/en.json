@@ -20,6 +20,9 @@
         "title": "About"
     },
     "caching": {
-        "blame": "Yes."
+        "blame": "Yes.",
+        "description": "Cache is an information technology for the temporary storage (caching) of Web documents, such as Web pages, images, and other types of Web multimedia, to reduce server lag. However, cache may get outdated quickly without updating, which may cause inconsistency and other problems. This page originates from {0}; you can find its source code on {1}.",
+        "link_site": "shouldiblamecaching.com",
+        "link_repo": "its repository on GitHub"
     }
 }

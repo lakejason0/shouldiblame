@@ -40,6 +40,14 @@
       <v-spacer></v-spacer>
       <locales-menu />
       <theme-toggle />
+      <v-btn
+        href="https://github.com/lakejason0/shouldiblame"
+        target="_blank"
+        text
+        icon
+      >
+        <v-icon>mdi-github</v-icon>
+      </v-btn>
     </v-app-bar>
 
     <v-main>

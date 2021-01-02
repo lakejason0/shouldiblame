@@ -20,6 +20,9 @@
         "title": "關於"
     },
     "caching": {
-        "blame": "應該。"
+        "blame": "應該。",
+        "description": "快取是用於臨時儲存（快取）Web文件（如HTML頁面和圖像），以減少伺服器延遲的一種資訊科技。但是，快取很容易過期，並且可能得不到更新，這就會導致不一致和其他很多問題。此頁面靈感出自{0}，您也可以造訪其{1}以取得原始碼。",
+        "link_site": "shouldiblamecaching.com",
+        "link_repo": "於GitHub的Repository"
     }
 }

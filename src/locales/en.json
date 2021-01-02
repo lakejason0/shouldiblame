@@ -3,7 +3,8 @@
         "title": "Should I blame ……",
         "subtitle": "Yes...... or perhaps?",
         "home": "Homepage",
-        "about": "About"
+        "about": "About",
+        "caching": "Caching"
     },
     "appBar": {
         "title": "Should I blame {name}?"
@@ -17,5 +18,8 @@
     },
     "about": {
         "title": "About"
+    },
+    "caching": {
+        "blame": "Yes."
     }
 }

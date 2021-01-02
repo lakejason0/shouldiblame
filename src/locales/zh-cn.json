@@ -3,7 +3,8 @@
         "title": "应不应该怪……？",
         "subtitle": "当然是……额，好吧，我也不知道。",
         "home": "主页",
-        "about": "关于"
+        "about": "关于",
+        "caching": "缓存"
     },
     "appBar": {
         "title": "应不应该怪{name}？"
@@ -17,5 +18,8 @@
     },
     "about": {
         "title": "关于"
+    },
+    "caching": {
+        "blame": "应该。"
     }
 }

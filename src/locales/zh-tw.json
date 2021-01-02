@@ -3,7 +3,8 @@
         "title": "應不應該怪……？",
         "subtitle": "當然是……好吧，我也不知道。",
         "home": "主頁",
-        "about": "關於"
+        "about": "關於",
+        "caching": "快取"
     },
     "appBar": {
         "title": "應不應該怪{name}？"
@@ -17,5 +18,8 @@
     },
     "about": {
         "title": "關於"
+    },
+    "caching": {
+        "blame": "應該。"
     }
 }

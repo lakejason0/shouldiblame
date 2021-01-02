@@ -8,7 +8,6 @@ const routes = [
   {
     path: '/',
     name: 'navigation.home',
-    pageTitle: 'home.pageTitle',
     icon: 'home',
     component: Home,
     showAtNavigation: true
@@ -16,12 +15,18 @@ const routes = [
   {
     path: '/about',
     name: 'navigation.about',
-    pageTitle: 'about.pageTitle',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
     icon: "information",
+    showAtNavigation: true
+  },
+  {
+    path: '/caching',
+    name: 'navigation.caching',
+    component: () => import('../views/Caching.vue'),
+    icon: "memory",
     showAtNavigation: true
   }
 ]
